@@ -11,10 +11,10 @@ export class EmbauchesComponent implements OnInit {
 
   constructor(private embaucheService : EmbauchesService) { }
 
-  personnesEmbauches: Personne[] = [];
+  personnesEmbauchees: Personne[] = [];
 
   ngOnInit(): void {
-    this.personnesEmbauches= this.embaucheService.getList();
+    this.personnesEmbauchees= this.embaucheService.getList();
   }
 
 }
